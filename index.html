@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Suraj Singh | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-
   <!-- Navigation -->
   <header>
     <nav>
@@ -24,22 +29,24 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="about" class="hero">
-    <h2>Hello, I'm <span>Suraj Singh</span></h2>
-    <p>Aspiring Data Analyst 💡 | SQL • Excel • Python • Power BI • Tableau</p>
-    <a href="#projects" class="btn">🚀 Explore My Work</a>
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Suraj Singh</span></h2>
+      <p class="typing">Aspiring Data Analyst 💡 | SQL • Python • Power BI • Tableau</p>
+      <a href="#projects" class="btn">🚀 Explore My Work</a>
+    </div>
   </section>
 
   <!-- Education -->
-  <section id="education" class="glass-card">
+  <section id="education" class="glass-card" data-aos="fade-up">
     <h2>🎓 Education</h2>
     <p><strong>B.Tech in Computer Science</strong> – XYZ University (2021–2025)</p>
     <p>Relevant Coursework: Data Analysis, Statistics, Database Systems</p>
   </section>
 
   <!-- Certifications -->
-  <section id="certifications" class="glass-card">
+  <section id="certifications" class="glass-card" data-aos="fade-up">
     <h2>📜 Certifications</h2>
     <ul>
       <li>Google Data Analytics – Coursera</li>
@@ -49,46 +56,66 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="glass-card">
+  <section id="projects" class="glass-card" data-aos="fade-up">
     <h2>💻 Projects</h2>
-    <div class="project">
-      <h3>E-Commerce Product Analysis</h3>
-      <p>📊 Tools: Excel, SQL, Power BI</p>
-      <p>Analyzed product dataset to uncover pricing & brand trends. Built interactive dashboards.</p>
-      <a href="https://github.com/suraj15506/ecommerce-analysis" target="_blank">🔗 View Project</a>
-    </div>
-    <div class="project">
-      <h3>Airline Price Analysis</h3>
-      <p>📊 Tools: Python, SQL, Power BI</p>
-      <p>Analyzed airline pricing dataset to generate KPIs & dashboards for insights.</p>
-      <a href="https://github.com/suraj15506/airline-price-analysis" target="_blank">🔗 View Project</a>
+    <div class="project-grid">
+      <div class="project">
+        <h3>E-Commerce Product Analysis</h3>
+        <p>📊 Tools: Excel, SQL, Power BI</p>
+        <p>Analyzed product dataset to uncover pricing & brand trends. Built interactive dashboards.</p>
+        <a href="https://github.com/suraj15506/ecommerce-analysis" target="_blank">🔗 View Project</a>
+      </div>
+      <div class="project">
+        <h3>Airline Price Analysis</h3>
+        <p>📊 Tools: Python, SQL, Power BI</p>
+        <p>Analyzed airline pricing dataset to generate KPIs & dashboards for insights.</p>
+        <a href="https://github.com/suraj15506/airline-price-analysis" target="_blank">🔗 View Project</a>
+      </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="glass-card">
+  <section id="skills" class="glass-card" data-aos="fade-up">
     <h2>⚡ Skills</h2>
-    <p><strong>Technical:</strong> SQL, Excel, Python (Pandas, Matplotlib), Power BI, Tableau</p>
-    <p><strong>Soft Skills:</strong> Problem-solving, Analytical Thinking, Communication</p>
+    <div class="skills">
+      <span class="skill-badge">SQL</span>
+      <span class="skill-badge">Excel</span>
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">Pandas</span>
+      <span class="skill-badge">Power BI</span>
+      <span class="skill-badge">Tableau</span>
+      <span class="skill-badge">Data Visualization</span>
+    </div>
   </section>
 
   <!-- Resume -->
-  <section id="resume" class="glass-card">
+  <section id="resume" class="glass-card" data-aos="fade-up">
     <h2>📄 Resume</h2>
     <a href="assets/resume.pdf" target="_blank" class="btn">Download Resume</a>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="glass-card">
+  <section id="contact" class="glass-card" data-aos="fade-up">
     <h2>📬 Contact</h2>
     <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
     <p>GitHub: <a href="https://github.com/suraj15506" target="_blank">github.com/suraj15506</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2050 Suraj Singh | Future-Ready Data Analyst</p>
+    <div class="socials">
+      <a href="https://github.com/suraj15506" target="_blank">🐱</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">💼</a>
+      <a href="mailto:youremail@gmail.com">📧</a>
+    </div>
   </footer>
 
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 </body>
 </html>
